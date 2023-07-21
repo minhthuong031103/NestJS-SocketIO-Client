@@ -19,8 +19,9 @@ export class SocketClient implements OnModuleInit {
       console.log('Connected to Gateway');
     });
     this.socketClient.on('onMessage', (payload: any) => {
-      console.log('SocketClientClass!');
+      console.log('Socket client received onMessage!');
       console.log(payload);
     });
+    
   }
 }
